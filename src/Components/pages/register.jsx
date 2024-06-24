@@ -23,7 +23,7 @@ const Register = () => {
     const handleRegister = async(e) =>{
         e.preventDefault();
         try {
-            await axios.post('/users',{
+            await axios.post('${import.meta.env.VITE_PUBLIC_URL}/users',{
                 name: name,
                 email: email,
                 password: password,

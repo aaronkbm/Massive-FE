@@ -186,7 +186,7 @@ const Navbar = () => {
   // };
   const refreshToken = async () => {
     try {
-      const response = await axios.get('/token');
+      const response = await axios.get('${import.meta.env.VITE_PUBLIC_URL}/token');
       setToken(response.data.accessToken);
       axios.defaults.headers.common["Authorization"] = `Bearer ${response.data.accessToken}`;
       const decoded = jwtDecode(response.data.accessToken);
@@ -207,7 +207,7 @@ const Navbar = () => {
 
   const handleLogout = async () => {
     try {
-      await axios.delete('/logout');
+      await axios.delete('${import.meta.env.VITE_PUBLIC_URL}/logout');
       navigate("/login");
       window.location.reload(); // Reload halaman setelah logout
     } catch (error) {

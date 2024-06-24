@@ -125,7 +125,7 @@ const Beranda1 = () => {
 
     const refreshToken = async() => {
         try {
-            const response = await axios.get('/token');
+            const response = await axios.get('${import.meta.env.VITE_PUBLIC_URL}/token');
             setToken(response.data.accessToken);
             const decoded = jwtDecode(response.data.accessToken);
             setName(decoded.name);
