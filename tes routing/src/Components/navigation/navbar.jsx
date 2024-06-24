@@ -173,6 +173,17 @@ const Navbar = () => {
     refreshToken();
   }, []);
 
+  // const refreshToken = async () => {
+  //   try {
+  //     const response = await axios.get('/token');
+  //     setToken(response.data.accessToken);
+  //     axios.defaults.headers.common["Authorization"] = `Bearer ${response.data.accessToken}`;
+  //     const decoded = jwtDecode(response.data.accessToken);
+  //     setName(decoded.name);
+  //   } catch (error) {
+  //     console.error('Error:', error);
+  //   }
+  // };
   const refreshToken = async () => {
     try {
       const response = await axios.get('/token');
@@ -181,7 +192,16 @@ const Navbar = () => {
       const decoded = jwtDecode(response.data.accessToken);
       setName(decoded.name);
     } catch (error) {
-      console.error('Error:', error);
+      if (error.response) {
+        // Server memberikan respons dengan status error
+        console.error('Error response from server:', error.response.data);
+      } else if (error.request) {
+        // Permintaan tidak mendapatkan respons
+        console.error('No response received:', error.request);
+      } else {
+        // Kesalahan lainnya
+        console.error('Error:', error.message);
+      }
     }
   };
 
