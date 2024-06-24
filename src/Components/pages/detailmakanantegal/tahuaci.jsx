@@ -6,7 +6,7 @@ import tahuaciFoto from '../../../assets/tegal/makanan/tahuaci/tahuaci.png'
 import tahuaciFoto2 from '../../../assets/tegal/makanan/tahuaci/tahuaci2.png'
 import tahuaciToko1 from '../../../assets/tegal/makanan/tahuaci/toko1.png'
 import tahuaciToko2 from '../../../assets/tegal/makanan/tahuaci/toko2.png'
-import tahuaciOrang1 from '../../../assets/tegal/makanan/orang1.png'
+import rujakteplakOrang1 from '../../../assets/tegal/makanan/orang1.png'
 
 import rating from '../../../assets/tegal/makanan/olos/rating.png'
 

@@ -21,7 +21,7 @@ const Login = () => {
     const Auth = async(e) =>{
         e.preventDefault();
         try {
-            await axios.post(`${import.meta.env.VITE_PUBLIC_URL}/login`,{
+            await axios.post(`/login`,{
                 email: email,
                 password: password,
             });
