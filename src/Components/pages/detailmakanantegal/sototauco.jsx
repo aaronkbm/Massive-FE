@@ -26,6 +26,8 @@ import { FaStar } from "react-icons/fa";
 import "../../style/bintang.css";
 import gambarbintang from "../../../assets/123.jpg";
 
+import rujakteplakOrang1 from '../../../assets/tegal/makanan/orang1.png'
+
 const SotoTauco = () => { 
   const { id } = useParams();
 

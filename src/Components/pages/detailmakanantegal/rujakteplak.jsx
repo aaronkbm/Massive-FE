@@ -6,7 +6,7 @@ import rujakteplakFoto from '../../../assets/tegal/makanan/rujakteplak/rujaktepl
 import rujakteplakFoto2 from '../../../assets/tegal/makanan/rujakteplak/rujakteplak2.png'
 import rujakteplakToko1 from '../../../assets/tegal/makanan/rujakteplak/toko1.png'
 import rujakteplakToko2 from '../../../assets/tegal/makanan/rujakteplak/toko2.png'
-import rujakteplakOrang1 from '../../../assets/tegal/makanan/orang1.png'
+
 
 import rating from '../../../assets/tegal/makanan/olos/rating.png'
 
@@ -26,6 +26,9 @@ import { useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import "../../style/bintang.css";
 import gambarbintang from "../../../assets/123.jpg";
+
+
+import rujakteplakOrang1 from '../../../assets/tegal/makanan/orang1.png'
 
 const rujakTeplak = () => { 
   const { id } = useParams();

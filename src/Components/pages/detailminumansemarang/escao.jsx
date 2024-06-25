@@ -7,7 +7,6 @@ import escaoFoto from '../../../assets/semarang/minuman/escao/escao1.png'
 import escaoFoto2 from '../../../assets/semarang/minuman/escao/escao2.png'
 import escaoToko1 from '../../../assets/semarang/minuman/escao/toko1.png'
 
-import rujakteplakOrang1 from '../../../assets/tegal/makanan/orang1.png'
 
 import rating from '../../../assets/tegal/makanan/olos/rating.png'
 
@@ -27,6 +26,9 @@ import { useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import "../../style/bintang.css";
 import gambarbintang from "../../../assets/123.jpg";
+
+
+import rujakteplakOrang1 from '../../../assets/tegal/makanan/orang1.png'
 
 const EsCao = () => { 
   const { id } = useParams();

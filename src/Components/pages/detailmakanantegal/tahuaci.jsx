@@ -6,7 +6,7 @@ import tahuaciFoto from '../../../assets/tegal/makanan/tahuaci/tahuaci.png'
 import tahuaciFoto2 from '../../../assets/tegal/makanan/tahuaci/tahuaci2.png'
 import tahuaciToko1 from '../../../assets/tegal/makanan/tahuaci/toko1.png'
 import tahuaciToko2 from '../../../assets/tegal/makanan/tahuaci/toko2.png'
-import rujakteplakOrang1 from '../../../assets/tegal/makanan/orang1.png'
+
 
 import rating from '../../../assets/tegal/makanan/olos/rating.png'
 
@@ -26,6 +26,9 @@ import { useParams } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import "../../style/bintang.css";
 import gambarbintang from "../../../assets/123.jpg";
+
+
+import rujakteplakOrang1 from '../../../assets/tegal/makanan/orang1.png'
 
 const TahuAci = () => { 
   const { id } = useParams();
